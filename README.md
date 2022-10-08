@@ -1,5 +1,5 @@
 # NSPlayTime
-Query For Game Play Histories Using MyNintendo App APIs
+Query for game play histories using My Nintendo app APIs
 
 ## Steps to acquire all histories
 
@@ -27,7 +27,7 @@ Within mitmproxy, look for the following requests:
 ```
 Request:
 
-curl POST "https://accounts.nintendo.com/connect/1.0.0/api/token" \
+curl "https://accounts.nintendo.com/connect/1.0.0/api/token" \
      -H 'Content-Type: application/json' \
      -d '{"client_id": "{CLIENT_ID}", "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer-session-token", "session_token": "{SESSION_TOKEN}"}'
 
@@ -106,3 +106,6 @@ Response:
     "totalPlayedMinutes": 250
 }
 ```
+## Credit
+
+Inspired by [this artical](https://ar1s.top/2022/08/01/获取switch游戏历史的一种方法/) written by Aris
